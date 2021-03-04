@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actualizar Novedad</title>
+    <link rel="stylesheet" href="css/normalice.css">
+    <script src="https://kit.fontawesome.com/5655f948a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-sena">
+            <img src="img/senaLogo.png" alt="logo sena">
+        </div>
+        <div class="menu">
+            <a href="Admin.html"><i class="icono izquierda fas fa-paste"></i>Novedad<i></i></a>
+            <a href="#"><i class="icono izquierda fas fa-user-alt"></i>Usuarios<i></i></a>
+            <a href="#"><i class="icono izquierda fas fa-folder-open"></i>Documentos y actas<i></i></a>
+            <a href="index.html">Salir</a>
+        </div>
+    </header>
+    <section class="contenido-general">
+        <div class="navegacion">
+           
+        </div>
+
+        <div >
+            <div class="centrar-texto">
+                <h1 class="titulo">Actualizar Novedad</h1>
+            </div>
+            <section class="">
+                <form class="conten-form" action="">
+                    <label for="" class="cont-label">Tipo de Documento:</label>
+                    <select name="" class="cont-input">
+                        <option value="CC">Cedula de ciudadania</option>
+                        <option value="TI">Tarjeta Identidad</option>
+                        <option value="CE">Cedula Extranjeria</option>
+                    </select>
+                    <label for="" class="cont-label">Documento Aprendiz:</label>
+                    <input type="text" id="DocumentoAprendiz" class="cont-input" placeholder="Documento"
+                        required="required">
+                    <label for="" class="cont-label">Nombre Aprendiz:</label>
+                    <input type="text" id="nombreAprendiz" class="cont-input" placeholder="Nombre" required="required">
+                    <label for="" class="cont-label">Apellido Aprendiz:</label>
+                    <input type="text" id="ApellidoAprendiz" class="cont-input" placeholder="Correo Electronico"
+                        required="required">
+                    <label for="" class="cont-label">Ficha:</label>
+                    <input type="text" id="Ficha" class="cont-input" placeholder="Ficha" required="required">
+                    <label for="" class="cont-label">Trimestre:</label>
+                    <select name="" class="cont-input">
+                        <option value="Primero">Primero</option>
+                        <option value="Segundo">Segundo</option>
+                        <option value="Tercero">Tercero</option>
+                        <option value="Cuarto">Cuarto</option>
+                        <option value="Quinto">Quinto</option>
+                        <option value="Sexto">Sexto</option>
+                        <option value="Septimo">Septimo</option>
+                        <option value="Octavo">Octavo</option>
+                    </select>
+
+                    <label for="" class="cont-label">Tipo de Novedad:</label>
+                    <select name="" class="cont-input">
+                        <option value="Academica">Academica</option>
+                        <option value="Disciplinaria">Disciplinaria</option>
+                    </select>
+
+                    <label for="" class="cont-label">Fecha Actualizacion:</label>
+                    <input type="date" id="FechaActualizacion" class="cont-input" name="" value="2021-02-02"
+                        min="2020-01-01" max="2021-12-31">
+
+                    <label for="" class="cont-label">Estado Novedad:</label>
+                    <select name="" class="cont-input">
+                        <option value="Activo">Activo</option>
+                        <option value="Culminado">Culminado</option>
+                    </select>
+                    <label for="" class="cont-label">Descripcion de la falta:</label>
+                    <textarea id="DescripcionFalta" class="cont-textarea"></textarea>
+                    <div>
+                        <input type="submit" value="Actualizar" class="boton verde" onclick="validar()">
+                    </div>
+                </form>
+            </section>
+        </div>
+
+    </section>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

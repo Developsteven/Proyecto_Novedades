@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AgregarUsuario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalice.css">
+    <script src="https://kit.fontawesome.com/5655f948a3.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="logo-sena">
+            <img src="img/senaLogo.png" alt="logo sena">
+        </div>
+        <div class="menu">
+            <a href="Admin.html"><i class="icono izquierda fas fa-paste"></i>Novedad<i></i></a>
+            <a href="#"><i class="icono izquierda fas fa-user-alt"></i>Usuarios<i></i></a>
+            <a href="#"><i class="icono izquierda fas fa-folder-open"></i>Documentos y actas<i></i></a>
+            <a href="index.html">Salir</a>
+        </div>
+    </header>
+    <section class="contenedor">
+        <div class="centrar-texto">
+            <h1 class="titulo">AGREGAR NOVEDAD </h1>
+        </div>
+        <section class=""> <!--contenido-centrado-->
+            <form class="conten-form">
+
+                <label class="cont-label"> Tipo de Documento </label>
+                <select name="devices" class="cont-input">
+                    <label for="Tipo de Documento"> Tipo de Documento</label>
+                    <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                    <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
+                    <option value="Cedula de Extranjeria">Cedula de Extranjeria</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select>
+
+                <label for="" class="cont-label">Documento del Aprendiz</label>
+                <input type="text" id="DocumentoAprendiz" placeholder="Documento del Aprendiz" class="cont-input"
+                    required="required">
+                <label for="" class="cont-label">Nombre Aprendiz</label>
+                <input type="text" id="" class="cont-input" placeholder="Nombre Aprendiz" required="required">
+
+                <label for="" class="cont-label">Apellidos Aprendiz</label>
+                <input type="text" id="" class="cont-input" placeholder="Apellidos Aprendiz" required="required">
+                <label for="" class="cont-label">Ficha</label>
+                <input type="number" id="Ficha" class="cont-input" placeholder="Ficha" required="required">
+
+                <label class="cont-label">Trimestre </label>
+                <select name="devices" class="cont-input">
+                    <label for="Trimestre">Trimestre</label>
+                    <option value="Primero">Primero</option>
+                    <option value="Segundo">Segundo</option>
+                    <option value="Tercero">Tercero</option>
+                    <option value="Cuarto">Cuarto</option>
+                    <option value="Quinto">Quinto</option>
+                    <option value="Sexto">Sexto</option>
+                    <option value="Septimo">Septimo</option>
+                    <option value="Octavo">Octavo</option>
+
+
+                </select>
+                <label class="cont-label"> Tipo de Novedad </label>
+                <select name="devices" class="cont-input">
+                    <label for="Tipo de Novedad">Tipo de Novedad</label>
+                    <option value="Academica">Academica</option>
+                    <option value="Disciplinaria">Disciplinaria</option>
+
+                </select>
+
+                </select>
+                <label for="" class="cont-label">Fecha Creacion</label>
+                <input type="date" id="" class="cont-input" placeholder="Fecha Creacion" required="required">
+                </select>
+                
+                <label for="" class="cont-label">Descripcion de novedad:</label>
+                <input type="text" id="DescripcionFalta" class="cont-textarea" required="required">
+
+                
+                <div>
+                    <input type="submit" value="Agregar" class="boton verde" onclick="validar()">
+                </div>
+            </form>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="/js/main.js"></script>
+
+</body>
+
+</html>

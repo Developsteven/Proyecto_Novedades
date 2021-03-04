@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Editar Usuario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalice.css">
+    <script src="https://kit.fontawesome.com/5655f948a3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-sena">
+            <img src="img/senaLogo.png" alt="logo sena">
+        </div>
+        <div class="menu">
+            <a href="Admin.html"><i class="icono izquierda fas fa-paste"></i>Novedad<i></i></a>
+            <a href="usuarios.html"><i class="icono izquierda fas fa-user-alt"></i>Usuarios<i></i></a>
+            <a href="#"><i class="icono izquierda fas fa-folder-open"></i>Documentos y actas<i></i></a>
+            <a href="index.html">Salir</a>
+        </div>
+    </header>
+    <section class="">
+        <div class="centrar-texto">
+            <h1 class="titulo">Editar Usuario</h1>
+        </div>
+        <section class="">
+
+            <form class="conten-form" action="">
+                <label for="" class="cont-label">Numero de Documento</label>
+                <input type="text" id="" class="cont-input" placeholder="Numero de Documento" required="required">
+
+                <label for="" class="cont-label"> Nombre Usuario</label>
+                <input type="text" id="" class="cont-input" placeholder="Nombre Usuario" required="required">
+
+                <label for="" class="cont-label">Apellidos usuario</label>
+                <input type="text" id="" class="cont-input" placeholder="Apellidos Usuario" required="required">
+                
+                <label for="" class="cont-label"> Cargo</label>
+                <input type="text" id="" class="cont-input" placeholder="Cargo" required="required">
+                
+                <label for="" class="cont-label"> Correo</label>
+                <input type="text" id="" class="cont-input" placeholder="Correo" required="required">
+               
+                <label for="" class="cont-label"> Contraseña</label>
+                <input type="text" id="" class="cont-input" placeholder="Contraseña" required="required">
+               
+                <label for="" class="cont-label"> Telefono</label>
+                <input type="text" id="" class="cont-input" placeholder="Telefono" required="required">
+                
+                <label class="cont-label">Rol </label>
+                <select name="devices" class="cont-input">
+                    <option value="Administrador">Admin</option>
+                    <option value="Coordinacion">Coordinacion</option>
+                    <option value="Bienestar">Bienestar</option>
+                    <option value="Instructor">Instructor</option>
+                </select>
+                <label class="cont-label">Estado </label>
+                <select name="devices" class="cont-input">
+                    <option value="Administrador">Activo</option>
+                    <option value="Coordinacion">Desactivar</option>
+                </select>
+                <!--<label for="" class="cont-label">Fecha Creacion</label>
+                <input type="date" id="" class="cont-input" placeholder="Fecha Creacion" required="required">
+                -->
+
+                <div>
+                    <input type="submit" value="Actualizar"  class="boton verde"onclick="validar()">
+                </div>
+            </form>
+        </section>
+
+
+        <script src="/js/main.js"></script>
+</body>
+
+</html>

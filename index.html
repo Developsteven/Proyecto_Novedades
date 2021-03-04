@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="site-header">
+            <a href="#" class="logo-sena">
+                <img src="img/senaLogo.png" alt="Logo Sena">
+            </a>
+        </div>
+    </header>
+    <section class="contenido">
+        <div class="titulo-login">
+            <h2>Bienvenidos</h2>
+        </div>
+
+        <form class="ingresar" action="Admin.html"> <!--"Aprendiz.html"  action="instructor.html" name="form"-->
+
+            <label for="username" class="ingresar-label"></label>
+            <input type="email" id="email" class="ingresar-input" placeholder="USUARIO" required="required"/> <!-- name="e-mail" -->
+
+            <label for="contrasena"></label>
+            <input type="password" class="ingresar-input" placeholder="CONTRASEÑA" id="password" required="required" /> <!-- name="password" -->
+            <div id="error"></div>
+            <div class="enlace">
+                <a href="paswordPage.html">¿Olvidaste tu contraseña?</a>
+            </div>
+            
+            <div >
+                <input type="submit" value="iniciar" class="boton verde" onclick ="iniciosesion();"/> 
+            </div>
+        </form>
+        
+    </section>
+
+    
+
+    <footer class="footer">
+        <p>
+            Todos los derechos 2017 SENA -Politicas de privacidad y condiciones
+            de uso Portal Web SENA Politica de tratamiento para Portección Datos Personales -
+            Política de seguridad y prívacidad de información.
+        </p>
+    </footer>
+    
+    <script src="./js/main.js"></script>
+    
+</body>
+
+</html>
