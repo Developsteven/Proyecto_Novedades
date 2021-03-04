@@ -147,6 +147,7 @@ img{
     background-color: #F5520B;
 }
 
+
 .menu a{
     text-decoration: none;
     color: #ffffff;
@@ -157,32 +158,25 @@ img{
 }
 @media(max-width: 768px){
     .menu {
-        width: 40%;
+        width: 5%;
         float: right;
         text-align: right;
-        /*display: inline-block;*/
-        margin: 0 10px 0 0;
-        padding: 10px 10px;
-        width: auto;
-        text-align: center;
-        display: block;
-        
     }
     .menu a{
         margin: 0 10px 0 0;
         padding: 10px 10px;
         width: auto;
         text-align: center;
-        display: block;
-        float: right;
+        /*display: block;*/
+        float: left; 
     }
 }
-/*
+
 @media(max-width: 768px){
     .menu{
         display: none;
     }
-}*/
+}
 .menu i{
     margin: 0 10px;
 }

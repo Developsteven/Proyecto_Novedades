@@ -81,23 +81,25 @@ function expand() {
 }
 
 // funcion navegacion
-$(document).ready(function(){
-    $('.menu li:has(ul)').click(function(e) {
+$(document).ready(function () {
+    $('.menu li:has(ul)').click(function (e) {
         e.preventDefault();
 
         if ($(this).hasClass('activado')) {
             $(this).removeClass('activado');
             $(this).children('ul').slideUp();
 
-        }   
-
-        else {
+        } else {
             $('.menu li ul').slideUp();
             $('.menu li').removeClass('activado');
             $(this).addClass('activado');
             $(this).children('ul').slideDown();
         }
 
+    });
+    // ---   Menu responsive
+    $('.menu-movil').on('click', function () {
+        $('.menu').slideToggle();
     });
 });
 
@@ -109,9 +111,9 @@ const open = document.getElementById('open');
 const modal_containder = document.getElementById('modal-containder');
 const closse = document.getElementById('closse');
 
-open.addEventListener('click',()=>{
+open.addEventListener('click', () => {
     modal_containder.classList.add('show');
 })
-closse.addEventListener('click',()=>{
+closse.addEventListener('click', () => {
     modal_containder.classList.remove('show');
 })
