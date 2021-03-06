@@ -82,7 +82,7 @@ function expand() {
 
 // funcion navegacion
 $(document).ready(function () {
-    $('.menu li:has(ul)').click(function (e) {
+    /*$('.menu li:has(ul)').click(function (e) {
         e.preventDefault();
 
         if ($(this).hasClass('activado')) {
@@ -96,7 +96,7 @@ $(document).ready(function () {
             $(this).children('ul').slideDown();
         }
 
-    });
+    });*/
     // ---   Menu responsive
     $('.menu-movil').on('click', function () {
         $('.menu').slideToggle();
