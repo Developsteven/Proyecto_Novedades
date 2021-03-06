@@ -389,7 +389,7 @@ img{
     margin: auto;
    
 }
-.cont-label{
+.cont-label, .cont-label-info{
     display: inline-block;
     font-weight: 400;
     padding: 1rem 0;
@@ -397,6 +397,9 @@ img{
     padding-left: 10px;
     width: 200px;
     font-family:sans-serif; 
+}
+.cont-label-info{
+    font-weight: bold;
 }
 .cont-input{
     display: inline-block;
@@ -417,6 +420,15 @@ img{
     margin-bottom: 20px ;
     border: 1px solid rgb(56, 151, 180);
     border-radius: 1rem;
+}
+.cont-label-descripcion{
+    text-align: justify;
+    font-weight: 400;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    width: 200px;
+    font-family:sans-serif; 
 }
 
 
