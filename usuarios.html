@@ -16,98 +16,102 @@
         <div class="logo-sena">
             <img src="img/senaLogo.png" alt="logo sena">
         </div>
+        <div class="menu-movil">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="menu">
-            <a href="Admin.html">Novedad</a>
-            <a href="#">Usuarios</a>
-            <a href="#">Documentos</a>
+            <a href="Admin.html">Novedades</a>
+            <a href="usuarios.html">Usuarios</a>
+            <a href="documentos.html">Documentos</a>
             <a href="index.html">Salir</a>
         </div>
     </header>
-    <section class="contenedor">
-        <div class="centrar-texto">
+    <section class="contenedor centrar-texto">
             <h1 class="titulo">Usuarios</h1>
-            <div class="busqueda">
-                <div class="busqueda-boton">
-                    <label for="" class="busqueda-label">Documento Usuario</label>
-                </div>
-                <div class="busqueda-boton">
-                    <input type="text" class="busqueda-input" placeholder="Numero Documento">
-                </div>
-                <div class="busqueda-boton">
-                    <input type="submit" class="btn verde" value="Consultar">
-                </div>
+        <div class="busqueda">
+            <div class="busqueda-boton">
+                <label for="" class="busqueda-label">Documento Usuario</label>
             </div>
-
-            <table class="tabla-info">
-                <thead class="titulo-tabla">
-                    <tr>
-                        <th>Documento</th>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Cargo</th>
-                        <!--<th>Correo</th>-->
-                        <th>Ver Mas</th>
-                        <th>Editar</th>
-                    </tr>
-
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Documento">12336566</td>
-                        <td data-label="Nombre">Critian Javier </td>
-                        <td data-label="apellido">Buitrago lopez</td>
-                        <td data-label="Cargo">Admin</td>
-                        <!--<td data-label="Correo">jbuitrago@gmail.com</td>-->
-                        <td data-label=">>>"><input type="submit" class="btn verde" value="Ver" id="open"></td>
-                        <td data-label=">>>"><a href="editarUsuarios.html"><input type="submit" class="btn azul"
-                                    value="Editar"></td></a>
-                    </tr>
-                    <tr>
-                        <td data-label="Documento">46546546</td>
-                        <td data-label="Nombre">Santiago Alfredo</td>
-                        <td data-label="apellido">Mateuz silva</td>
-                        <td data-label="Cargo">Administrativo</td>
-                        <!--<td data-label="Correo">smateuz@gmail.com</td>-->
-                        <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
-                        <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Documento">1245668</td>
-                        <td data-label="Nombre">Nicolas</td>
-                        <td data-label="apellido">Bohorquez leguizamo</td>
-                        <td data-label="Cargo">Instructor</td>
-                        <!-- <td data-label="Correo">nbohorquez@gmail.com</td>-->
-                        <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
-                        <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Documento">1245668</td>
-                        <td data-label="Nombre">Steven</td>
-                        <td data-label="apellido">Perez garzon</td>
-                        <td data-label="Cargo">Admin</td>
-                        <!--<td data-label="Correo">sperez@gmail.com</td>-->
-                        <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
-                        <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Documento">1245668</td>
-                        <td data-label="Nombre">Plinio antonio</td>
-                        <td data-label="apellido">Grau</td>
-                        <td data-label="Cargo">instructor</td>
-                        <!-- <td data-label="Correo">pgrau@gmail.com</td>-->
-                        <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
-                        <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="scroll">
-                <div class="ll">
-                    <input type="submit" class="btn azul" value="Anterior">
-                    <input type="submit" class="btn azul" value="Siguiente">
-                </div>
-                <a href="FormularioAgregarusuario.html"><input type="submit" class="btn rojo" value="Agregar"></a>
+            <div class="busqueda-boton">
+                <input type="text" class="busqueda-input" placeholder="Numero Documento">
+            </div>
+            <div class="busqueda-boton">
+                <input type="submit" class="btn verde" value="Consultar">
             </div>
         </div>
+
+        <table class="tabla-info">
+            <thead class="titulo-tabla">
+                <tr>
+                    <th>Documento</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Cargo</th>
+                    <!--<th>Correo</th>-->
+                    <th>Ver Mas</th>
+                    <th>Editar</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Documento">12336566</td>
+                    <td data-label="Nombre">Critian Javier </td>
+                    <td data-label="apellido">Buitrago lopez</td>
+                    <td data-label="Cargo">Admin</td>
+                    <!--<td data-label="Correo">jbuitrago@gmail.com</td>-->
+                    <td data-label=">>>"><input type="submit" class="btn verde" value="Ver" id="open"></td>
+                    <td data-label=">>>"><a href="editarUsuarios.html"><input type="submit" class="btn azul"
+                                value="Editar"></td></a>
+                </tr>
+                <tr>
+                    <td data-label="Documento">46546546</td>
+                    <td data-label="Nombre">Santiago Alfredo</td>
+                    <td data-label="apellido">Mateuz silva</td>
+                    <td data-label="Cargo">Administrativo</td>
+                    <!--<td data-label="Correo">smateuz@gmail.com</td>-->
+                    <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
+                    <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
+                </tr>
+                <tr>
+                    <td data-label="Documento">1245668</td>
+                    <td data-label="Nombre">Nicolas</td>
+                    <td data-label="apellido">Bohorquez leguizamo</td>
+                    <td data-label="Cargo">Instructor</td>
+                    <!-- <td data-label="Correo">nbohorquez@gmail.com</td>-->
+                    <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
+                    <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
+                </tr>
+                <tr>
+                    <td data-label="Documento">1245668</td>
+                    <td data-label="Nombre">Steven</td>
+                    <td data-label="apellido">Perez garzon</td>
+                    <td data-label="Cargo">Admin</td>
+                    <!--<td data-label="Correo">sperez@gmail.com</td>-->
+                    <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
+                    <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
+                </tr>
+                <tr>
+                    <td data-label="Documento">1245668</td>
+                    <td data-label="Nombre">Plinio antonio</td>
+                    <td data-label="apellido">Grau</td>
+                    <td data-label="Cargo">instructor</td>
+                    <!-- <td data-label="Correo">pgrau@gmail.com</td>-->
+                    <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
+                    <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="scroll">
+            <div class="ll">
+                <input type="submit" class="btn azul" value="Anterior">
+                <input type="submit" class="btn azul" value="Siguiente">
+            </div>
+            <a href="FormularioAgregarusuario.html"><input type="submit" class="btn rojo" value="Agregar"></a>
+        </div>
+
 
     </section>
 
@@ -117,28 +121,34 @@
                 <input type="submit" value="X" class="cerrar rojo" id="closse">
             </div>
             <form class="conten-form" action="">
-                <label for="" class="cont-label">Numero de Documento</label>
+                <label for="" class="cont-label-info">Numero de Documento</label>
                 <label for="" class="cont-label">197856422</label>
 
-                <label for="" class="cont-label"> Nombre Usuario</label>
+                <label for="" class="cont-label-info"> Nombre Usuario</label>
                 <label for="" class="cont-label">Jose Alfredo</label>
 
-                <label for="" class="cont-label">Apellidos usuario</label>
+                <label for="" class="cont-label-info">Apellidos usuario</label>
                 <label for="" class="cont-label">lopez herrera</label>
 
-                <label for="" class="cont-label"> Cargo</label>
+                <label for="" class="cont-label-info"> Cargo</label>
                 <label for="" class="cont-label">Administrativo</label>
 
-                <label for="" class="cont-label"> Correo</label>
+                <label for="" class="cont-label-info"> Correo</label>
                 <label for="" class="cont-label">jlopezh1235@misena.edu.co</label>
 
-                <label for="" class="cont-label"> Telefono</label>
+                <label for="" class="cont-label-info"> Telefono</label>
                 <label for="" class="cont-label">3203556742</label>
 
             </form>
         </div>
     </div>
-
+    <footer class="footer">
+        <p>
+            Todos los derechos 2017 SENA -Politicas de privacidad y condiciones
+            de uso Portal Web SENA Politica de tratamiento para Portección Datos Personales -
+            Política de seguridad y prívacidad de información.
+        </p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="/js/main.js"></script>

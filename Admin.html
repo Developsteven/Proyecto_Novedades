@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin</title>
-   <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/normalice.css">
     <script src="https://kit.fontawesome.com/5655f948a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,137 +25,144 @@
         <div class="menu">
             <a href="Admin.html">Novedades</a>
             <a href="usuarios.html">Usuarios</a>
-            <a href="#">Documentos</a>
+            <a href="documentos.html">Documentos</a>
             <a href="index.html">Salir</a>
         </div>
     </header>
-    <section class="contenedor">
-        <div class="centrar-texto">
-            <h1 class="titulo">BIENVENIDO</h1>
-            <div class="busqueda">
-                <div class="busqueda-boton">
-                    <label for="" class="busqueda-label">Documento Aprendiz</label>
-                </div>
-                <div class="busqueda-boton">
-                    <input type="text" class="busqueda-input" placeholder="Numero Documento">
-                </div>
-                <div class="busqueda-boton">
-                    <input type="submit" class="btn verde" value="Consultar">
-                </div>
+    <section class="contenedor centrar-texto">
+        <h1 class="titulo">novedades aprendiz</h1>
+        <div class="busqueda">
+            <div class="busqueda-boton">
+                <label for="" class="busqueda-label">Documento Aprendiz</label>
             </div>
-
-            <table class="tabla-info">
-                <thead class="titulo-tabla">
-                    <tr>
-                        <th>Documento</th>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Novedad</th>
-                        <th>fecha</th>
-                        <th>Ver Novedad</th>
-                        <th>Editar</th>
-                    </tr>
-
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Documento">12336566</td>
-                        <td data-label="Nombre">Javier</td>
-                        <td data-label="apellido">Buitrago</td>
-                        <td data-label="Novedad">Academica</td>
-                        <td data-label="fecha">12/05/2020</td>
-                        <td data-label=">>>"><input type="submit" class="btn verde" value="Ver" id="open"></td>
-                        <td data-label=">>>"><a href="editarNovedad.html"><input type="submit" class="btn azul" value="Editar"></td></a>
-                    </tr>
-                    <tr>
-                        <td data-label="Documento">46546546</td>
-                        <td data-label="Nombre">Santiago</td>
-                        <td data-label="apellido">Mateuz</td>
-                        <td data-label="Novedad">Academica</td>
-                        <td data-label="fecha">12/05/2020</td>
-                        <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
-                        <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Documento">1245668</td>
-                        <td data-label="Nombre">Nicolas</td>
-                        <td data-label="apellido">Bohorquez</td>
-                        <td data-label="Novedad">Disciplinaria</td>
-                        <td data-label="fecha">12/05/2020</td>
-                        <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
-                        <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Documento">1245668</td>
-                        <td data-label="Nombre">steven</td>
-                        <td data-label="apellido">Perez</td>
-                        <td data-label="Novedad">Disciplinaria</td>
-                        <td data-label="fecha">12/05/2020</td>
-                        <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
-                        <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Documento">1245668</td>
-                        <td data-label="Nombre">Plinio</td>
-                        <td data-label="apellido">Grau</td>
-                        <td data-label="Novedad">Disciplinaria</td>
-                        <td data-label="fecha">12/05/2020</td>
-                        <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
-                        <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="scroll">
-                <div class="ll">
-                    <input type="submit" class="btn azul" value="Anterior">
-                    <input type="submit" class="btn azul" value="Siguiente">
-                </div>
-                <a href="FormularioAgregarNovedad.html"><input type="submit" class="btn rojo" value="Agregar"></a>
+            <div class="busqueda-boton">
+                <input type="text" class="busqueda-input" placeholder="Numero Documento">
             </div>
+            <div class="busqueda-boton">
+                <input type="submit" class="btn verde" value="Consultar">
+            </div>
+        </div>
+
+        <table class="tabla-info">
+            <thead class="titulo-tabla">
+                <tr>
+                    <th>Documento</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Novedad</th>
+                    <th>fecha</th>
+                    <th>Ver Novedad</th>
+                    <th>Editar</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Documento">12336566</td>
+                    <td data-label="Nombre">Javier</td>
+                    <td data-label="apellido">Buitrago</td>
+                    <td data-label="Novedad">Academica</td>
+                    <td data-label="fecha">12/05/2020</td>
+                    <td data-label=">>>"><input type="submit" class="btn verde" value="Ver" id="open"></td>
+                    <td data-label=">>>"><a href="editarNovedad.html"><input type="submit" class="btn azul"
+                                value="Editar"></td></a>
+                </tr>
+                <tr>
+                    <td data-label="Documento">46546546</td>
+                    <td data-label="Nombre">Santiago</td>
+                    <td data-label="apellido">Mateuz</td>
+                    <td data-label="Novedad">Academica</td>
+                    <td data-label="fecha">12/05/2020</td>
+                    <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
+                    <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
+                </tr>
+                <tr>
+                    <td data-label="Documento">1245668</td>
+                    <td data-label="Nombre">Nicolas</td>
+                    <td data-label="apellido">Bohorquez</td>
+                    <td data-label="Novedad">Disciplinaria</td>
+                    <td data-label="fecha">12/05/2020</td>
+                    <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
+                    <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
+                </tr>
+                <tr>
+                    <td data-label="Documento">1245668</td>
+                    <td data-label="Nombre">steven</td>
+                    <td data-label="apellido">Perez</td>
+                    <td data-label="Novedad">Disciplinaria</td>
+                    <td data-label="fecha">12/05/2020</td>
+                    <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
+                    <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
+                </tr>
+                <tr>
+                    <td data-label="Documento">1245668</td>
+                    <td data-label="Nombre">Plinio</td>
+                    <td data-label="apellido">Grau</td>
+                    <td data-label="Novedad">Disciplinaria</td>
+                    <td data-label="fecha">12/05/2020</td>
+                    <td data-label=">>>"><input type="submit" class="btn verde" value="Ver"></td>
+                    <td data-label=">>>"><input type="submit" class="btn azul" value="Editar"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="scroll">
+            <div class="ll">
+                <input type="submit" class="btn azul" value="Anterior">
+                <input type="submit" class="btn azul" value="Siguiente">
+            </div>
+            <a href="FormularioAgregarNovedad.html"><input type="submit" class="btn rojo" value="Agregar"></a>
         </div>
 
     </section>
 
-<div class="modal-container" id="modal-containder">
-    <div class="modal">
-        <div class="btn-cerrar">
-            <input type="submit" value="X" class="cerrar rojo" id="closse">
+    <div class="modal-container" id="modal-containder">
+        <div class="modal">
+            <div class="btn-cerrar">
+                <input type="submit" value="X" class="cerrar rojo" id="closse">
+            </div>
+            <form class="conten-form" action="">
+                <label for="" class="cont-label-info">Tipo de Documento:</label>
+                <label for="" class="cont-label">Cedula de Ciudadania</label>
+
+                <label for="" class="cont-label-info">Documento Aprendiz:</label>
+                <label for="" class="cont-label">197856422</label>
+
+                <label for="" class="cont-label-info">Nombre Aprendiz:</label>
+                <label for="" class="cont-label">Jose Alfredo</label>
+
+                <label for="" class="cont-label-info">Apellido Aprendiz:</label>
+                <label for="" class="cont-label">lopez herrera</label>
+
+                <label for="" class="cont-label-info">Ficha:</label>
+                <label for="" class="cont-label">1964705</label>
+
+                <label for="" class="cont-label-info">Trimestre:</label>
+                <label for="" class="cont-label">Primero</label>
+
+                <label for="" class="cont-label-info">Tipo de Novedad:</label>
+                <label for="" class="cont-label">Academica</label>
+
+                <label for="" class="cont-label-info">Fecha:</label>
+                <label for="" class="cont-label">12/05/2020</label>
+
+                <label for="" class="cont-label-info">Descripcion de la falta:</label>
+                <label for="" class="cont-label-descripcion">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Fugit nulla animi, enim minima fugiat alias delectus
+                    officia et qui facere deleniti itaque sequi exercitationem quibusdam
+                    consequuntur reiciendis quae officiis illo itaque sequi exercitationem quibusdam
+                    pisicing elit. Fugit nulla animi, enim minima fugiat alias delectus
+                    officia et qui facere deleniti itaque sequi exercitationem quibusdam</label>
+
+            </form>
         </div>
-        <form class="conten-form" action="">
-            <label for="" class="cont-label-info">Tipo de Documento:</label>
-            <label for="" class="cont-label">Cedula de Ciudadania</label>
-           
-            <label for="" class="cont-label-info">Documento Aprendiz:</label>
-            <label for="" class="cont-label">197856422</label>
-
-            <label for="" class="cont-label-info">Nombre Aprendiz:</label>
-           <label for="" class="cont-label">Jose Alfredo</label>
-
-            <label for="" class="cont-label-info">Apellido Aprendiz:</label>
-            <label for="" class="cont-label">lopez herrera</label>
-
-            <label for="" class="cont-label-info">Ficha:</label>
-            <label for="" class="cont-label">1964705</label>
-            
-            <label for="" class="cont-label-info">Trimestre:</label>
-            <label for="" class="cont-label">Primero</label>
-
-            <label for="" class="cont-label-info">Tipo de Novedad:</label>
-            <label for="" class="cont-label">Academica</label>
-
-            <label for="" class="cont-label-info">Fecha:</label>
-            <label for="" class="cont-label">12/05/2020</label>
-
-            <label for="" class="cont-label-info">Descripcion de la falta:</label>
-            <label for="" class="cont-label-descripcion">Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Fugit nulla animi, enim minima fugiat alias delectus 
-                officia et qui facere deleniti itaque sequi exercitationem quibusdam 
-                consequuntur reiciendis quae officiis illo itaque sequi exercitationem quibusdam</label>
-            
-        </form>
     </div>
-</div>
-
+    <footer class="footer">
+        <p>
+            Todos los derechos 2017 SENA -Politicas de privacidad y condiciones
+            de uso Portal Web SENA Politica de tratamiento para Portección Datos Personales -
+            Política de seguridad y prívacidad de información.
+        </p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="/js/main.js"></script>

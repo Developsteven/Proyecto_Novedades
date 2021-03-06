@@ -10,8 +10,12 @@ html {
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
+    min-height: 76.2vh;
     width: 95%;
+    flex-wrap: wrap;
+   /* min-height: calc(100vh - 85px - 67px);*/
 }
+
 img{
     max-width: 100%;
 }
@@ -114,7 +118,7 @@ img{
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 65rem;
+    height: 63.6rem;
     z-index: 1;
     flex: 1;
 }
@@ -144,6 +148,7 @@ img{
     display: flex;
     justify-content: space-around;
     background-color: #F5520B;
+   /* height: 87px;*/
 }
 
 
@@ -154,6 +159,7 @@ img{
     color: #ffffff;
     margin: 30px 9px;;
     display: block;
+    font-family:sans-serif; 
     /*padding: 30px 2px;*/
     font-size: 16px;
 }
@@ -210,6 +216,7 @@ img{
 .titulo{
     margin-top: 35px ;
     font-size: 25px;
+    text-transform: capitalize;
 }
 .busqueda{
     display: flex;
@@ -328,7 +335,8 @@ img{
 .footer{
     background-color: #F5520B;
     padding: 15px 0;
-    
+    /*height: 67px;*/
+    align-self: flex-end;
 }
 .footer p{
     color: #ffffff;
@@ -422,12 +430,10 @@ img{
     border-radius: 1rem;
 }
 .cont-label-descripcion{
+    display: block;
     text-align: justify;
-    font-weight: 400;
-    padding: 1rem 0;
     font-size: 1.5rem;
     padding-left: 10px;
-    width: 200px;
     font-family:sans-serif; 
 }
 

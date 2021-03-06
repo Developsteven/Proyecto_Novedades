@@ -19,18 +19,24 @@
         <div class="logo-sena">
             <img src="img/senaLogo.png" alt="logo sena">
         </div>
+        <div class="menu-movil">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="menu">
-            <a href="Admin.html">Novedad</a>
+            <a href="Admin.html">Novedades</a>
             <a href="usuarios.html">Usuarios</a>
-            <a href="#">Documentos</a>
+            <a href="documentos.html">Documentos</a>
             <a href="index.html">Salir</a>
         </div>
     </header>
     <section class="contenedor">
         <div class="centrar-texto">
-            <h1 class="titulo">AGREGAR NOVEDAD </h1>
+            <h1 class="titulo">agregar novedad</h1>
         </div>
-        <section class=""> <!--contenido-centrado-->
+        <section class="contenedor">
+            <!--contenido-centrado-->
             <form class="conten-form">
 
                 <label class="cont-label"> Tipo de Documento </label>
@@ -79,20 +85,26 @@
                 <label for="" class="cont-label">Fecha Creacion</label>
                 <input type="date" id="" class="cont-input" placeholder="Fecha Creacion" required="required">
                 </select>
-                
+
                 <label for="" class="cont-label">Descripcion de novedad:</label>
                 <input type="text" id="DescripcionFalta" class="cont-textarea" required="required">
 
-                
+
                 <div>
                     <input type="submit" value="Agregar" class="boton verde" onclick="validar()">
                 </div>
             </form>
         </section>
-
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="/js/main.js"></script>
-
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/js/main.js"></script>
+    <footer class="footer">
+        <p>
+            Todos los derechos 2017 SENA -Politicas de privacidad y condiciones
+            de uso Portal Web SENA Politica de tratamiento para Portección Datos Personales -
+            Política de seguridad y prívacidad de información.
+        </p>
+    </footer>
 </body>
 
 </html>
