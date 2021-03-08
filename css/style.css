@@ -144,6 +144,20 @@ img{
 
 /* ---- barra navegacion ----- */
 
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F5520B;
+}
+.menu-login{
+    margin: 30px 9px;;
+    font-family:sans-serif; 
+    font-size: 16px;
+}
+.menu-login a{
+    text-decoration: none;
+    color: #ffffff;
+}
 .site-header, .menu{
     /*display: block;
     justify-content: space-around;*/
