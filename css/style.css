@@ -145,58 +145,64 @@ img{
 /* ---- barra navegacion ----- */
 
 .site-header, .menu{
-    display: flex;
-    justify-content: space-around;
+    /*display: block;
+    justify-content: space-around;*/
     background-color: #F5520B;
-   /* height: 87px;*/
+}
+.menu{
+    display: block;
+    justify-content: space-around;
 }
 
-
 .menu a{
-    flex: 1;
     display: flex;
     text-decoration: none;
     color: #ffffff;
-    margin: 30px 9px;;
-    display: block;
+    margin: 20px 39px;
     font-family:sans-serif; 
-    /*padding: 30px 2px;*/
+    
     font-size: 16px;
-}
-@media(max-width: 768px){
+} 
+
+ @media(min-width: 769px){
     .menu {
-        width: 5%;
         float: right;
         text-align: right;
-        display: block;
+        display: flex;
+        margin-top: -80px;
+        margin-right: 70px;
     }
     .menu a{
         margin: 0 10px 0 0;
-        padding: 10px 10px;
+        /*padding: 10px 10px;*/
+        margin: 30px 9px;;
         width: auto;
         text-align: center;
         display: block;
         float: right; 
     }
-}
+} 
 
-@media(max-width: 768px){
+/* @media(min-width: 769px){
     .menu{
         display: none;
     }
-}
+}  */
 .menu i{
     margin: 0 10px;
 }
 .logo-sena{
     width: 100px;
+    margin-left: 10%;
 }
 .menu-movil{
     width: 40px;
-    display: block;
+    display: inline-block;
+    justify-content: space-between;
     float: right;
     text-align: right;
-    margin-top: 25px;
+    margin-top: -60px;
+    margin-right: 10%;
 }
 @media (min-width: 768px){
     div.menu-movil{

@@ -81,27 +81,25 @@ function expand() {
 }
 
 // funcion navegacion
-$(document).ready(function () {
-    /*$('.menu li:has(ul)').click(function (e) {
-        e.preventDefault();
+(function () {
+    $(function () {
+        // ---   Menu responsive
+        $('.menu-movil').on('click', function () {
+            $('.menu').slideToggle();
+        });
 
-        if ($(this).hasClass('activado')) {
-            $(this).removeClass('activado');
-            $(this).children('ul').slideUp();
+        // Reaccionar a Resize en la pantalla
+        var breakpoint = 768;
+        $(window).resize(function () {
+            if ($(document).width() >= breakpoint) {
+                $('.menu').show();
+            } else {
+                $('.menu').hide();
+            }
+        });
 
-        } else {
-            $('.menu li ul').slideUp();
-            $('.menu li').removeClass('activado');
-            $(this).addClass('activado');
-            $(this).children('ul').slideDown();
-        }
-
-    });*/
-    // ---   Menu responsive
-    $('.menu-movil').on('click', function () {
-        $('.menu').slideToggle();
     });
-});
+})();
 
 
 
