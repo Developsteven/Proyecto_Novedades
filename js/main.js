@@ -2,34 +2,32 @@
     email: '',
     password: ''
 } */
-
-/* function validar(){
-    var nombre, apellido, documento, email, carrera;
-    nombre = document.getElementById("nombre").value;
-    apellido = document.getElementById("apellido").value;
-    documento = document.getElementById("documento").value;
-    email = document.getElementById("email").value;
-    carrera = document.getElementById("carrera").value;
-
-    if(nombre === "" || apellido === "" || documento === ""|| email === "" || carrera === "" || mensaje === ""){
-        alert("Todos los campos son Obligartorios");
-        return false;
-    }
-    else{
-        alert("Tu Mensaje fue enviado");
-    }
-} 
- */
-
-var email, password, error;
+var email, password, error, nombre, apellido, documento, email, carrera, cargo;
 email = document.getElementById("email");
 password = document.getElementById("password");
 error = document.getElementById("error");
+nombre = document.getElementById("nombre");
+apellido = document.getElementById("apellido");
+cargo = document.getElementById("cargo");
 
 
+function validar() {
+    documento = document.getElementById("documento").value;
+    nombre = document.getElementById("nombre").value;
+    apellido = document.getElementById("apellido").value;
+    cargo = document.getElementById("cargo").value;
+    email = document.getElementById("email").value;
+    carrera = document.getElementById("carrera").value;
+
+    if (documento === "" || nombre === "" || apellido === "" || email === "" || carrera === "" || mensaje === "") {
+        error.innerHTML = ('Bienvenido');
+
+    } else {
+        error.innerHTML = ('ingrese los datos');
+    }
+}
 
 function iniciosesion() {
-    debugger;
     email = document.getElementById("email").value;
     password = document.getElementById("password").value;
 
@@ -68,17 +66,6 @@ function mostarError(mensaje) {
 } */
 
 
-// funcion para colapzar el menu de opciones de novedades
-const $detailslist = document.querySelectorAll('details')
-$detailslist.forEach(($details) => {
-    $details.querySelector('summary').addEventListener('click', expand)
-})
-
-function expand() {
-    $detailslist.forEach(($details) => {
-        $details.removeAttribute('open')
-    })
-}
 
 // funcion navegacion
 (function () {
@@ -111,7 +98,20 @@ const closse = document.getElementById('closse');
 
 open.addEventListener('click', () => {
     modal_containder.classList.add('show');
-})
+});
 closse.addEventListener('click', () => {
     modal_containder.classList.remove('show');
-})
+});
+
+//  ---- funcion textarea------
+var textarea = document.querySelector('textarea');
+
+textarea.addEventListener('keydown', autosize);
+
+function autosize() {
+    var el = this;
+    setTimeout(function () {
+        el.style.cssText = 'height:auto; padding:0';
+        el.style.cssText = 'height:' + el.scrollHeight + 'px';
+    }, 0);
+}

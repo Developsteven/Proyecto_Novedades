@@ -34,29 +34,29 @@
         </div>
         <section class="">
 
-            <form class="conten-form" action="">
-                <label for="" class="cont-label">Numero de Documento</label>
-                <input type="text" id="" class="cont-input" placeholder="Numero de Documento" required="required">
+            <form class="formularios" action="">
+                <label for="" class="cont-label">Numero de Documento:</label>
+                <input type="text" id="documento" class="cont-input" placeholder="Numero de Documento" required="required">
+                
+                <label for="" class="cont-label">Nombre Usuario:</label>
+                <input type="text" id="nombre" class="cont-input" placeholder="Nombre Usuario" required="required">
 
-                <label for="" class="cont-label"> Nombre Usuario</label>
-                <input type="text" id="" class="cont-input" placeholder="Nombre Usuario" required="required">
+                <label for="" class="cont-label">Apellidos usuario:</label>
+                <input type="text" id="apellido" class="cont-input" placeholder="Apellidos Usuario" required="required">
 
-                <label for="" class="cont-label">Apellidos usuario</label>
-                <input type="text" id="" class="cont-input" placeholder="Apellidos Usuario" required="required">
+                <label for="" class="cont-label">Cargo:</label>
+                <input type="text" id="cargo" class="cont-input" placeholder="Cargo" required="required">
 
-                <label for="" class="cont-label"> Cargo</label>
-                <input type="text" id="" class="cont-input" placeholder="Cargo" required="required">
+                <label for="" class="cont-label">Correo:</label>
+                <input type="email" id="email" class="cont-input" placeholder="Correo" required="required">
 
-                <label for="" class="cont-label"> Correo</label>
-                <input type="text" id="" class="cont-input" placeholder="Correo" required="required">
-
-                <label for="" class="cont-label"> Contraseña</label>
+                <label for="" class="cont-label">Contraseña:</label>
                 <input type="text" id="" class="cont-input" placeholder="Contraseña" required="required">
 
-                <label for="" class="cont-label"> Telefono</label>
+                <label for="" class="cont-label">Telefono:</label>
                 <input type="text" id="" class="cont-input" placeholder="Telefono" required="required">
 
-                <label class="cont-label">Rol </label>
+                <label class="cont-label">Rol:</label>
                 <select name="devices" class="cont-input">
                     <option value="Administrador">Admin</option>
                     <option value="Coordinacion">Coordinacion</option>
@@ -67,9 +67,9 @@
                 <!--<label for="" class="cont-label">Fecha Creacion</label>
                 <input type="date" id="" class="cont-input" placeholder="Fecha Creacion" required="required">
                 -->
-
+                <div id="error"></div>
                 <div>
-                    <input type="submit" value="Agregar" class="boton verde" onclick="validar()">
+                    <input type="submit" value="Agregar" class="boton verde" onclick="validar();"/>
                 </div>
             </form>
         </section>

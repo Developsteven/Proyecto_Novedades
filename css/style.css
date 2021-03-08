@@ -36,6 +36,7 @@ img{
     border-radius: 2rem;
     display: block;
     border: none;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     text-transform: uppercase;
@@ -371,13 +372,12 @@ img{
 /**----- ventana modal ------- **/
 .modal-container{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     align-items: center;
     justify-content: center;
     position: fixed;
     pointer-events: none;
     transition: all 600ms ease;
-    
     opacity: 0;
     top: 0;
     left: 0;
@@ -387,18 +387,64 @@ img{
 .modal{
     background-color: #e0e0e0;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     /* transform: translateY(-30%); */
 }
-
-.show{
-    pointer-events: auto;
-    opacity: 1;
+.conten-form{
+    width: 500px;
+    padding: 16px;
+    margin: auto;
+   
 }
 .btn-cerrar{
     margin-left: 450px;
 }
+@media(max-width: 700px){
+    .modal-container{
+        display: inline-flex;
+        align-items: flex-start;
+        overflow-y: scroll;
+    }
+    
+    .modal{
+        width:450px ;
+    }
+    .conten-form{
+        width: 450px;
+        padding: 16px;
+        margin: auto;
+    }
+    .btn-cerrar{
+        margin-left: 405px;
+    }
+}
+
+@media(max-width: 500px){
+    .modal-container{
+        display: inline-flex;
+        align-items: flex-start;
+        overflow-y: scroll;
+    }
+    
+    .modal{
+        width:250px ;
+    }
+    .conten-form{
+        width: 250px;
+        padding: 16px;
+        margin: auto;
+    }
+    .btn-cerrar{
+        margin-left: 200px;
+    }
+
+}
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
 /* #open:checked {
     transform: translateY(0%); 
 }*/
@@ -411,12 +457,7 @@ img{
     text-transform: uppercase;
     color: #ffffff;
 }
-.conten-form{
-    width: 500px;
-    padding: 16px;
-    margin: auto;
-   
-}
+
 .cont-label, .cont-label-info{
     display: inline-block;
     font-weight: 400;
@@ -448,13 +489,34 @@ img{
     margin-bottom: 20px ;
     border: 1px solid rgb(56, 151, 180);
     border-radius: 1rem;
+    display: block;
+    overflow:hidden;
 }
+ @media(max-width: 550px){
+    .cont-textarea{
+        width: 260px;
+    }
+} 
 .cont-label-descripcion{
     display: block;
     text-align: justify;
     font-size: 1.5rem;
     padding-left: 10px;
     font-family:sans-serif; 
+}
+.formularios{
+    width: 500px;
+    padding: 16px;
+    margin: auto;
+    text-align: justify;
+}
+@media(max-width: 550px){
+    .formularios{
+        width: 300px;
+        padding: 10px 0;
+        margin: auto;
+        text-align: justify;
+    }
 }
 
 /* ----   Contenido pagina documentos */
